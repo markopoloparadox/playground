@@ -37,10 +37,10 @@ jobs:
               body: '👋 Thanks for reporting!'
             })
   job03:
-  runs-on: [ubuntu-latest]
-  steps:
-    - name: Set Env
-      run: export MSG="This Is New"
-    - uses: mshick/add-pr-comment@v2
-      with:
-        message: $MSG
+    runs-on: [ubuntu-latest]
+    steps:
+      - name: Set Env
+        run: export MSG="This Is New"
+      - uses: mshick/add-pr-comment@v2
+        with:
+          message: $MSG
