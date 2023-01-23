@@ -14,7 +14,8 @@ jobs:
       - name: test
         if: contains(github.event.comment.body, '/test')  # check the comment if it contains the keywords
         run: echo test2
-    job02:
+  job02:
+    steps:
       - uses: mshick/add-pr-comment@v2
         with:
           message: |
